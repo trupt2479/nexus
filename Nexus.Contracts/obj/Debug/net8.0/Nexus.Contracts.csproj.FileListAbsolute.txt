@@ -1,0 +1,12 @@
+D:\Nexus\Nexus.Contracts\bin\Debug\net8.0\Nexus.Contracts.deps.json
+D:\Nexus\Nexus.Contracts\bin\Debug\net8.0\Nexus.Contracts.dll
+D:\Nexus\Nexus.Contracts\bin\Debug\net8.0\Nexus.Contracts.pdb
+D:\Nexus\Nexus.Contracts\obj\Debug\net8.0\Nexus.Contracts.csproj.AssemblyReference.cache
+D:\Nexus\Nexus.Contracts\obj\Debug\net8.0\Nexus.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nexus\Nexus.Contracts\obj\Debug\net8.0\Nexus.Contracts.AssemblyInfoInputs.cache
+D:\Nexus\Nexus.Contracts\obj\Debug\net8.0\Nexus.Contracts.AssemblyInfo.cs
+D:\Nexus\Nexus.Contracts\obj\Debug\net8.0\Nexus.Contracts.csproj.CoreCompileInputs.cache
+D:\Nexus\Nexus.Contracts\obj\Debug\net8.0\Nexus.Contracts.dll
+D:\Nexus\Nexus.Contracts\obj\Debug\net8.0\refint\Nexus.Contracts.dll
+D:\Nexus\Nexus.Contracts\obj\Debug\net8.0\Nexus.Contracts.pdb
+D:\Nexus\Nexus.Contracts\obj\Debug\net8.0\ref\Nexus.Contracts.dll

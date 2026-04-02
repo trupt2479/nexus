@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong@Passw0rd
+    ports:
+      - "1433:1433"
+
+  nodeservice:
+    build:
+      context: .
+      dockerfile: Nexus.NodeService/Dockerfile
+    ports:
+      - "5001:8080"
+    environment:
+      - RabbitMQHost=rabbitmq
+      - ASPNETCORE_HTTP_PORTS=8080
+
+  orchestrator:
+    build:
+      context: .
+      dockerfile: Nexus.Orchestrator/Dockerfile
+    depends_on:
+      - sqlserver
+      - rabbitmq
+      - nodeservice
+    environment:
+      - RabbitMQHost=rabbitmq
+      - NodeServiceUrl=http://nodeservice:8080
+      - ConnectionStrings__SagaDatabase=Server=sqlserver;Database=NexusSagaDb;User Id=sa;Password=YourStrong@Passw0rd;MultipleActiveResultSets=true;TrustServerCertificate=True

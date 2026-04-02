@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WJFytLV723k3d3+5RFCXlRqghIKR1KAqq7hGQVqreyU=",
+  "Source": "Nexus.NodeService",
+  "BasePath": "_content/Nexus.NodeService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

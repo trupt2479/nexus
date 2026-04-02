@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "Nexus.Contracts";
+
+package nexus.saga;
+
+service SagaOrchestrator {
+  rpc ExecuteStep (SagaStepRequest) returns (SagaStepResponse);
+  rpc CompensateStep (SagaStepRequest) returns (SagaStepResponse);
+}
+
+message SagaStepRequest {
+  string transaction_id = 1;
+  string step_name = 2;
+  string payload = 3;
+}
+
+message SagaStepResponse {
+  string transaction_id = 1;
+  bool is_success = 2;
+  string error_message = 3;
+  string result_payload = 4;
+}
