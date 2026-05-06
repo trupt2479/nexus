@@ -1,4 +1,4 @@
-# Nexus — Distributed Saga Workflow Engine
+# Nexus - Distributed Saga Workflow Engine
 
 ## Executive Summary
 Nexus is a highly resilient, containerized distributed workflow engine engineered to manage complex transactions across scalable microservices using the Saga Pattern. It guarantees absolute eventual consistency by automatically orchestrating forward-execution RPCs and seamlessly rolling back failed distributed state mutations across remote nodes without the bottleneck of two-phase locking commits.
